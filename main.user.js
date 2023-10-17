@@ -3,7 +3,7 @@
 // @namespace   https://github.com/TentacleTenticals/
 // @match       https://dtf.ru/*
 // @grant       Tentacle Tenticals
-// @version     1.0.4
+// @version     1.0.8
 // @author      Tentacle Tenticals
 // @description Скрипт для появления панели виджетов
 // @homepage    https://github.com/TentacleTenticals/DTF-Widget-Panel
@@ -11,26 +11,25 @@
 // @downloadURL https://github.com/TentacleTenticals/DTF-Widget-Panel/raw/main/main.user.js
 //
 // @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/libs/splitCls/classes.js
-// @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/libs/settings/css/dtfCore.js
 //
 // @require     https://github.com/TentacleTenticals/DTF-Libs1/raw/main/classes/widget/panel/js/main.js
-// @require     https://github.com/TentacleTenticals/DTF-Libs1/raw/main/classes/widget/panel/css/main.js
+// @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/libs/widget/css/panel.js
 // @license MIT
 // ==/UserScript==
 /* jshint esversion:8 */
 
 (() => {
   const cfg = {
-    changeStyle: true,
+    changeStyle: false,
     widget: {
       'side': {
         'btn': {
-          'padding': '10px 10px 10px 10px !important'
+          'min-width': '15'
         }
       },
       'main': {
         'btn': {
-          'height': '20px !important'
+          'height': '15'
         }
       }
     }
@@ -39,10 +38,11 @@
 
 const css = (cfg) => `
 .sidePanel>.header {
- padding: ${cfg.widget.side.btn.padding};
+  min-width: ${cfg.widget.side.btn['min-width']||10}px;
+  aspect-ratio: 1/0.85;
 }
 .mainPanel>.header {
- height: ${cfg.widget.main.btn.height};
+ height: ${cfg.widget.main.btn.height||8}px;
 }`;
 
 
