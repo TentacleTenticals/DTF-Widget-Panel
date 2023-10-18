@@ -3,7 +3,7 @@
 // @namespace   https://github.com/TentacleTenticals/
 // @match       https://dtf.ru/*
 // @grant       Tentacle Tenticals
-// @version     1.0.8
+// @version     1.0.9
 // @author      Tentacle Tenticals
 // @description Скрипт для появления панели виджетов
 // @homepage    https://github.com/TentacleTenticals/DTF-Widget-Panel
@@ -12,8 +12,8 @@
 //
 // @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/libs/splitCls/classes.js
 //
-// @require     https://github.com/TentacleTenticals/DTF-Libs1/raw/main/classes/widget/panel/js/main.js
-// @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/libs/widget/css/panel.js
+// @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/interface/widget/js/panel.js
+// @require     https://github.com/TentacleTenticals/dtf-libs-2.0/raw/main/interface/widget/css/panel.js
 // @license MIT
 // ==/UserScript==
 /* jshint esversion:8 */
