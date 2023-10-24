@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        DTF WidgetPanel
 // @namespace   https://github.com/TentacleTenticals/
-// @match       https://dtf.ru/*
+// @match       https://*dtf.ru/*
 // @grant       Tentacle Tenticals
-// @version     1.0.11
+// @version     1.0.12
 // @author      Tentacle Tenticals
 // @description Скрипт для появления панели виджетов
 // @homepage    https://github.com/TentacleTenticals/DTF-Widget-Panel
